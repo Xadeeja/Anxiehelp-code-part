@@ -1,0 +1,40 @@
+//Code for main menu (Heaven scene and leave button):
+//This code will dictate the switching of scenes whenever the user clicks on a specific option in the main menu scene.
+
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using UnityEngine.SceneManagement;
+
+public class mainmenu : MonoBehaviour
+{
+    //Load Heaven Scene
+    public void Heaven()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 2);
+    }
+    //Leave the app
+    public void Leave()
+    {
+        Application.Quit();
+        Debug.Log("You have left the Space. Take care!");
+    }
+}
+
+//Wandermenu Code (Wander and Meditation room scene):
+//This code will dictate the switching of scenes in the “Wander scene”
+
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using UnityEngine.SceneManagement;
+
+public class Wandermenu : MonoBehaviour
+{
+    //Load Room Scene
+    public void Room()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+    }
+
+}
